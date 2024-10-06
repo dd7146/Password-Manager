@@ -1,0 +1,145 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Set the background to black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #39FF14; /* Neon green text color */
+}
+
+/* Main container styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full page height to center the content */
+}
+
+/* Box similar to ChatGPT login style */
+.login-box {
+    background-color: #1a1a1a; /* Dark gray background for the box */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Slight shadow */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #39FF14; /* Neon green for the text */
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 30px; /* Increased gap between fields */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #39FF14; /* Neon green for labels */
+}
+
+/* Input styling similar to ChatGPT login */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4a4d55;
+    border-radius: 6px;
+    background-color: #202123; /* Dark background for input */
+    color: #39FF14; /* Neon green text in input fields */
+    font-size: 16px;
+    transition: border-color 1ms ease, box-shadow 1ms ease;
+}
+
+/* Input focus styling */
+input:focus {
+    border-color: #39FF14; /* Neon green border when focused */
+    outline: none;
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    background-color: #39FF14; /* Neon green button */
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 200ms ease, box-shadow 200ms ease;
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #32cc12; /* Slightly darker neon green on hover */
+    box-shadow: 0 4px 12px rgba(50, 204, 18, 0.3);
+}
+
+/* Credentials display area */
+.credentials-display {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#savedCredentials {
+    background-color: #2e2f38;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    color: #39FF14; /* Neon green for saved credentials */
+}
+/* Keep your existing styling from before */
+
+/* Add this styling for the "View" button */
+.view-btn {
+    background-color: transparent;
+    border: none;
+    color: #39FF14;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.view-btn:hover {
+    text-decoration: underline;
+}
+/* Keep your existing styling */
+
+/* Styling for the view button */
+.view-btn {
+    background-color: transparent;
+    border: none;
+    color: #39FF14;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.view-btn:hover {
+    text-decoration: underline;
+}
+
+/* Add transition styling for credentials */
+.credential-item {
+    opacity: 0;
+    transition: opacity 1ms ease-in-out; /* Transition effect for credentials display */
+}
